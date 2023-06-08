@@ -1,0 +1,26 @@
+h2 {
+    text-align: center;
+}
+
+.form_container {
+    text-align: center;
+}
+
+.form_box {
+    width: 600px;
+    padding: 2rem;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    
+}
+
+.form_box input {
+    padding: .5rem;
+    
+}
+.btn_checkout {
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+}

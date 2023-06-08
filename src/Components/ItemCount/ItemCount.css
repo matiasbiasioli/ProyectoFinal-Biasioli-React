@@ -1,0 +1,13 @@
+.contadorContainer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 10rem;
+   border: 1px solid;
+}
+.contadorContainer button {
+    font-size: 2rem;
+    padding: 5px 20px;
+    background-color: white;
+    border: none;
+}
