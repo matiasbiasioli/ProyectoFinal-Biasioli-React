@@ -1,0 +1,11 @@
+
+.btnEliminar {
+    padding: .8rem 1.8rem;
+    background-color: #B70404;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    margin-top: 1rem;
+}

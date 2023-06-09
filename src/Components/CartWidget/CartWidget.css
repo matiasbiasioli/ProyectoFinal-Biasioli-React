@@ -1,3 +1,9 @@
 .imgCarrito {
     width: 3rem;
 }
+span {
+    background-color: #40128B;
+    border-radius: 50%;
+    color: white;
+    padding: .2rem .5rem;
+}

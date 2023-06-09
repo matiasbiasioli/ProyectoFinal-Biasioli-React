@@ -4,10 +4,10 @@ import { Link, NavLink } from 'react-router-dom'
 
 const NavBar = () => {
   return (
-    <>
+    
       <header className='header_container'>
         <Link to={'/'} >
-          <h1>Winery shop</h1>
+          <h1>Winery Store</h1>
         </Link>
         <nav>
           <ul>
@@ -27,7 +27,7 @@ const NavBar = () => {
         </nav>
         <CartWidget />
       </header>
-    </>
+    
   )
 }
 

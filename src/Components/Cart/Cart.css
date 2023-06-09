@@ -1,0 +1,23 @@
+.cartItemContainer{
+    text-align: center;
+}
+.btnVaciarCarrito {
+    padding: .8rem 1.8rem;
+    background-color: #0079FF;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    margin-top: 1rem;
+}
+.btnFinalizarCompra {
+    padding: .8rem 1.8rem;
+    background-color: #40128B;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    margin-top: 1rem;
+}

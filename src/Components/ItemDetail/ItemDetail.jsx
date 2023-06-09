@@ -21,13 +21,13 @@ const ItemDetail = ({ nombre, precio, img, id, stock }) => {
       <div>
         <img src={img} alt={nombre} />
       </div>
-      <div>
+      <div className='productDetailsContent'>
         <h3>Nombre: {nombre}</h3>
         <h4>Precio: {precio}</h4>
         <h4>ID: {id}</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolorum aspernatur distinctio cum. Velit tempore laudantium ad aspernatur unde rem ullam inventore, illo alias blanditiis? Unde omnis numquam sit? Minima, ab totam est libero ut, labore dolore ex distinctio alias repellendus explicabo odit incidunt qui, sed sequi voluptatibus in rerum.</p>
         {
-          cantidadCarrito > 0 ? (<Link to="/Cart"> Terminar Compra</Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={handleCantidad} />)
+          cantidadCarrito > 0 ? (<Link to="/Cart"><button className='btnTerminarCompra'>Terminar Compra</button></Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={handleCantidad} />)
         }
       </div>
     </div>
