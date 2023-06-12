@@ -4,6 +4,7 @@
    justify-content: space-between;
    width: 10rem;
    border: 1px solid;
+   margin: auto;
 }
 .contadorContainer button {
     font-size: 2rem;

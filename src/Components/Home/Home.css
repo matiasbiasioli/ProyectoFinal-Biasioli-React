@@ -13,6 +13,9 @@
     border-radius: 10px;
     text-align: center;
 }
+.home_container button {
+    padding: .5rem 1rem;
+}
 .home_container .malbec {
     background-image: url(../../assets/egmalbec.jpg);
     background-position: center;

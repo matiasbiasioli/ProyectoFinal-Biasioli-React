@@ -13,9 +13,9 @@ const ItemDetail = ({ nombre, precio, img, id, stock }) => {
 
   const handleCantidad = (cantidad) => {
     setCantidadCarrito(cantidad);
-    //console.log("Se agregaron " + cantidad + " productos al carrito");
     const item = { id, nombre, precio };
     agregarProducto(item, cantidad);
+    //Funcion del tostify con parametros 
     const notify = ()=> toast("Agregaste producto al carrito!",{
       position: "bottom-center",
       type: "success",
@@ -38,7 +38,7 @@ const ItemDetail = ({ nombre, precio, img, id, stock }) => {
         {
           cantidadCarrito > 0 ? (<Link to="/Cart"><button className='btnTerminarCompra'>Terminar Compra</button></Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={handleCantidad}  />)
         }
-        <Link to={'/'}><button className='btnSeguirComprando'>Seguir Comprando</button></Link>
+        <Link to={'/productos'}><button className='btnSeguirComprando'>Seguir Comprando</button></Link>
         <ToastContainer/>
       </div>
     </div>
