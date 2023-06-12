@@ -4,3 +4,30 @@
     grid-template-areas: "malbec cabernet pinot"
                           "malbec chardonay blend"
 }
+.home_container .box {
+    font-size: 3rem;
+    background-color: green;
+    border: solid 2px;
+    border-radius: 10px;
+    text-align: center;
+}
+.home_container .malbec {
+    background-image: url(../../assets/egmalbec.jpg);
+    background-position: center;
+}
+.home_container .cabernet {
+    background-image: url(../../assets/egmalbec.jpg);
+    background-position: center;
+}
+.home_container .chardonay {
+    background-image: url(../../assets/egmalbec.jpg);
+    background-position: center;
+}
+.home_container .pinot {
+    background-image: url(../../assets/egmalbec.jpg);
+    background-position: center;
+}
+.home_container .blend {
+    background-image: url(../../assets/egmalbec.jpg);
+    background-position: center;
+}

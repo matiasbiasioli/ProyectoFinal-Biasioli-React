@@ -21,6 +21,9 @@ const NavBar = () => {
         <FontAwesomeIcon className='btnClose' icon={faXmark} onClick={close} />
         <ul>
           <li>
+            <NavLink to={'/productos'}>Todos los Productos</NavLink>
+          </li>
+          <li>
             <NavLink to={`/Categoria/2`} >Malbec</NavLink>
           </li>
           <li>
