@@ -8,14 +8,19 @@ import { useParams } from 'react-router-dom'
 import { collection, getDocs, where, query } from "firebase/firestore";
 import { dataBase } from "../../Service/Config";
 
+import { CSSProperties } from "react";
+import ClipLoader from "react-spinners/ClipLoader";
+
 const ItemListContainer = ({ greeting }) => {
   const [productos, setProductos] = useState([])
   const {idCategoria} = useParams()
+  let [loading, setLoading] = useState(true);
 
   useEffect (()=>{
-    const misProductos = idCategoria ? query(collection(dataBase, "Inventario"), where("idCat", "==", idCategoria)) : collection(dataBase, "Inventario");
+    const misProductos = idCategoria ? query(collection(dataBase, "Inventario"), where("idCat", "==", idCategoria))  : collection(dataBase, "Inventario");
 
     getDocs(misProductos)
+    
       .then(res =>{
         const nuevosProductos = res.docs.map(doc=>{
           const data = doc.data()
@@ -25,13 +30,6 @@ const ItemListContainer = ({ greeting }) => {
       })
       .catch(error => console.log(error))
   }, [idCategoria])
-
-  // useEffect(() => {
-  //   const prodCat = idCategoria ? getProductoPorCategoria : getProductos;
-  //   prodCat(idCategoria)
-  //   .then(respuesta => setProductos(respuesta))
-  //   .catch(error => console.log(error))
-  // }, [idCategoria])
 
   return (
     <div className="misProductos">

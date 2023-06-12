@@ -1,6 +1,5 @@
 import { useState } from "react"
 import './ItemCount.css'
-
 const ItemCount = ({ inicial, stock, funcionAgregar }) => {
   const [contador, setContador] = useState(inicial)
   

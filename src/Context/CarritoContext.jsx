@@ -29,6 +29,7 @@ export const CarritoProvider = ({ children }) => {
       setCarrito(carritoActualizado);
       setCantidadTotal(prev => prev + cantidad);
       setTotal(prev => prev + (item.precio * cantidad));
+      
     }
   }
   const eliminarProducto = (id) => {
