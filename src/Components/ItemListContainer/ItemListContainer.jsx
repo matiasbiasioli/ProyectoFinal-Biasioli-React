@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, CSSProperties } from "react"
 // import { getProductos, getProductoPorCategoria } from "../asyncmock"
 import ItemList from "../ItemList/ItemList"
 import './ItemListContainer.css'
@@ -8,7 +8,8 @@ import { useParams } from 'react-router-dom'
 import { collection, getDocs, where, query } from "firebase/firestore";
 import { dataBase } from "../../Service/Config";
 //Importacion del spinner
-import ClipLoader from "react-spinners/ClipLoader";
+import PuffLoader from "react-spinners/PuffLoader";
+
 
 const ItemListContainer = ({ greeting }) => {
   const [productos, setProductos] = useState([])
@@ -21,7 +22,7 @@ const ItemListContainer = ({ greeting }) => {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 1000)
+    }, 1000);
     getDocs(misProductos)
       .then(res => {
         const nuevosProductos = res.docs.map(doc => {
@@ -35,7 +36,7 @@ const ItemListContainer = ({ greeting }) => {
   return (
     <div className="misProductos">
       {
-        loading ? <ClipLoader size={30}/> 
+        loading ? <PuffLoader className="clip" color="#40128B" size={80}/> 
         : 
         <div>
           <h2>{greeting}</h2>

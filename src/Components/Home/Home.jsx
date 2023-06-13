@@ -7,7 +7,9 @@ const Home = () => {
       <div className="home_container">
         <NavLink className="box malbec" to={'/Categoria/2'}>
           <div>
-            Malbec
+            <p>
+              Malbec
+            </p>
           </div>
           <div>
             <button>
@@ -17,7 +19,9 @@ const Home = () => {
         </NavLink>
         <NavLink className="box cabernet" to={'/Categoria/3'}>
           <div>
-            Cabernet
+            <p>
+              Cabernet
+            </p>
           </div>
           <div>
             <button>
@@ -26,7 +30,9 @@ const Home = () => {
           </div></NavLink>
         <NavLink className="box pinot" to={'/Categoria/4'}>
           <div>
-            Pinot
+            <p>
+              Pinot
+            </p>
           </div>
           <div>
             <button>
@@ -35,7 +41,9 @@ const Home = () => {
           </div></NavLink>
         <NavLink className="box chardonay" to={'/Categoria/5'}>
           <div>
-            Chardonay
+            <p>
+              Chardonay
+            </p>
           </div>
           <div>
             <button>
@@ -44,13 +52,16 @@ const Home = () => {
           </div></NavLink>
         <NavLink className="box blend" to={'/Categoria/5'}>
           <div>
-            Blend
+            <p>
+              Blend
+            </p>
           </div>
           <div>
             <button>
               Ver Productos
             </button>
-          </div></NavLink>
+          </div>
+        </NavLink>
       </div>
     </Link>
   )

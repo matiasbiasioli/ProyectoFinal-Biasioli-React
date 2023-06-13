@@ -1,38 +1,78 @@
 .home_container {
     display: grid;
-    gap: .5rem;
+    height: 80vh;
+    gap: .7rem;
     margin-top: .5rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "malbec cabernet pinot"
-                          "malbec chardonay blend"
+        "malbec chardonay blend";
 }
+
 .home_container .box {
     font-size: 3rem;
-    background-color: green;
     border: solid 2px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
+
+.home_container .box:hover {
+    transform: scale(1.02);
+    transition: 1.5ms;
+}
+
 .home_container button {
     padding: .5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
 }
+
+
 .home_container .malbec {
     background-image: url(../../assets/egmalbec.jpg);
     background-position: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
+
 .home_container .cabernet {
     background-image: url(../../assets/egmalbec.jpg);
     background-position: center;
 }
+
 .home_container .chardonay {
     background-image: url(../../assets/egmalbec.jpg);
     background-position: center;
 }
+
 .home_container .pinot {
     background-image: url(../../assets/egmalbec.jpg);
     background-position: center;
 }
+
 .home_container .blend {
     background-image: url(../../assets/egmalbec.jpg);
     background-position: center;
+}
+
+@media (max-width:760px) {
+    .home_container {
+        display: block;
+        width: 100vw;
+        height: 0vh;
+        gap: 1rem;
+        margin-top: .5rem;
+    }
+    .home_container .box {
+        font-size: 3rem;
+        border: solid 2px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
 }
