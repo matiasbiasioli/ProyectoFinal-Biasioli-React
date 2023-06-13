@@ -1,4 +1,6 @@
 import { createContext, useState } from "react";
+import Swal from "sweetalert2";
+import withReactContent from 'sweetalert2-react-content'
 
 export const CarritoContext = createContext({
   carrito: [],
@@ -43,6 +45,12 @@ export const CarritoProvider = ({ children }) => {
     setCarrito([]);
     setCantidadTotal(0);
     setTotal(0)
+    const MySwal = withReactContent(Swal)
+    MySwal.fire({
+      title: "Estas seguro de querer vaciar el carrito?",
+      icon: "warning",
+      confirmButtonText: "si",
+    })
   }
   return (
     <CarritoContext.Provider value={{ carrito, agregarProducto, eliminarProducto, vaciarCarrito, cantidadTotal, total }}>
