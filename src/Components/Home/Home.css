@@ -24,40 +24,50 @@
 }
 
 .home_container button {
+    font-size: 1.5rem;
     padding: .5rem 1rem;
     border-radius: 10px;
     cursor: pointer;
     background-color: transparent;
+    color: white;
+    border: solid 1px white;
 }
 
 
 .home_container .malbec {
-    background-image: url(../../assets/egmalbec.jpg);
+    background-image: url(../../img/uvasmalbec.avif);
     background-position: center;
+    background-position: center;
+    background-size: cover;
     grid-row-start: 1;
     grid-row-end: 3;
 }
 
 .home_container .cabernet {
-    background-image: url(../../assets/egmalbec.jpg);
+    background-image: url(../../img/vinodelicioso.avif);
     background-position: center;
+    background-position: center;
+    background-size: cover;
 }
 
 .home_container .chardonay {
-    background-image: url(../../assets/egmalbec.jpg);
+    background-image: url(../../img/chardonayimg.avif);
     background-position: center;
+    background-position: center;
+    background-size: cover;
 }
 
 .home_container .pinot {
-    background-image: url(../../assets/egmalbec.jpg);
+    background-image: url(../../img/botellacopa.avif);
     background-position: center;
+    background-position: center;
+    background-size: cover;
 }
 
 .home_container .blend {
     background-image: url(../../img/blendimg.avif);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 @media (max-width:760px) {
