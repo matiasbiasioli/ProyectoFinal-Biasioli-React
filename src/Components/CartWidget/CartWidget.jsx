@@ -1,4 +1,4 @@
-const carrito = "../src/assets/carrito.png"
+const carrito = "../../img/carrito.png"
 import { Link } from "react-router-dom"
 import "./CartWidget.css"
 import { CarritoContext } from "../../Context/CarritoContext"

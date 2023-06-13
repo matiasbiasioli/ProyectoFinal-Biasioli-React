@@ -54,8 +54,10 @@
 }
 
 .home_container .blend {
-    background-image: url(../../assets/egmalbec.jpg);
+    background-image: url(../../img/blendimg.avif);
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 @media (max-width:760px) {
