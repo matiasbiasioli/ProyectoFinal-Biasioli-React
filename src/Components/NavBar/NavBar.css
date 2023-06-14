@@ -4,9 +4,11 @@
     justify-content: space-around;
     border-bottom: 1px solid;
     background-color: #FFE79B;
+    
 }
 .header_container h1 {
     color: #40128B;
+    text-transform: uppercase;
 }
 .header_container .nav ul {
     display: flex;
@@ -26,14 +28,14 @@ a {
     display: none;
 }
 
-@media (max-width: 770px){
+@media (max-width: 860px){
     .btnBar {
         display: block;
         padding: .5rem;
         font-size: 1.5rem;
         color: white;
         border: none;
-        background-color:#DD58D6;
+        background-color:#40128B;
         border-radius: 10px;
         cursor: pointer;
     }

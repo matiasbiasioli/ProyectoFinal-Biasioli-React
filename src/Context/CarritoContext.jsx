@@ -31,7 +31,7 @@ export const CarritoProvider = ({ children }) => {
       setCarrito(carritoActualizado);
       setCantidadTotal(prev => prev + cantidad);
       setTotal(prev => prev + (item.precio * cantidad));
-      
+
     }
   }
   const eliminarProducto = (id) => {
@@ -47,9 +47,8 @@ export const CarritoProvider = ({ children }) => {
     setTotal(0)
     const MySwal = withReactContent(Swal)
     MySwal.fire({
-      title: "Estas seguro de querer vaciar el carrito?",
-      icon: "warning",
-      confirmButtonText: "si",
+      title: "Has vaciado el carrito",
+      icon: "success",
     })
   }
   return (

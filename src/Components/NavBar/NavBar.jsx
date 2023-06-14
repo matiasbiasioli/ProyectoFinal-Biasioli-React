@@ -14,9 +14,6 @@ const NavBar = () => {
       <Link to={'/'} >
         <h1>Winery Store</h1>
       </Link>
-      <button className='btnBar' onClick={open}>
-        <FontAwesomeIcon icon={faBars} />
-      </button>
       <nav className='nav'>
         <FontAwesomeIcon className='btnClose' icon={faXmark} onClick={close} />
         <ul>
@@ -38,6 +35,9 @@ const NavBar = () => {
         </ul>
       </nav>
       <CartWidget />
+      <button className='btnBar' onClick={open}>
+        <FontAwesomeIcon icon={faBars} />
+      </button>
     </header>
 
   )

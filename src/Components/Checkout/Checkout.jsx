@@ -68,23 +68,23 @@ return (
       Total Orden: {total}
       <hr />
       <div className="form_box">
-        <label htmlFor="">Nombre</label>
+        <label htmlFor="">Nombre:</label>
         <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
       </div>
       <div className="form_box">
-        <label htmlFor="">Apellido</label>
+        <label htmlFor="">Apellido:</label>
         <input type="text" value={apellido} onChange={(e) => setApellido(e.target.value)} />
       </div>
       <div className="form_box">
-        <label htmlFor="">Telefono</label>
+        <label htmlFor="">Telefono:</label>
         <input type="text" value={telefono} onChange={(e) => setTelefono(e.target.value)} />
       </div>
       <div className="form_box">
-        <label htmlFor="">Email</label>
+        <label htmlFor="">Email:</label>
         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
       </div>
       <div className="form_box">
-        <label htmlFor="">Email Confirmación</label>
+        <label htmlFor="">Email Confirmación:</label>
         <input type="email" value={emailConfirmacion} onChange={(e) => setEmailConfirmacion(e.target.value)} />
       </div>
       {error && <p>{error}</p>}

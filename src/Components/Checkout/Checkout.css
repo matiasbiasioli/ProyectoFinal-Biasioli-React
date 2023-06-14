@@ -7,20 +7,37 @@ h2 {
 }
 
 .form_box {
-    width: 600px;
-    padding: 2rem;
+    width: 40vw;
+    padding: 1rem;
     display: flex;
     margin: auto;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
-
+.form_box label {
+    text-align: start;
+    font-weight: bold;
+}
 .form_box input {
-    padding: .5rem;
-    
+    padding: 1rem;
+    border-top: none;
+    border-right: none;  
+    border-left: none;  
+}
+.form_box input:focus {
+    border-color: #40128B;
 }
 .btn_checkout {
     margin-top: 1rem;
     padding: 1rem;
     font-size: 1rem;
+    border-radius: 20px;
+    background-color:#40128B;
+    color: white;
+    cursor: pointer;
+
+}
+@media (max-width: 760px){
+    .form_box {
+        width: 80vw;
+    }
 }

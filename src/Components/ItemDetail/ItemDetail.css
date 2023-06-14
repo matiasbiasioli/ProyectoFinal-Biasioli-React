@@ -1,7 +1,10 @@
 .productDetails {
   text-align: center;
 }
-
+.productDetails img {
+  width: 20rem;
+  margin-top: 2rem;
+}
 .btnTerminarCompra {
   padding: 1rem 1.5rem;
   background-color: #40128B;

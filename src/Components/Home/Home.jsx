@@ -10,8 +10,6 @@ const Home = () => {
             <p>
               Malbec
             </p>
-          </div>
-          <div>
             <button>
               Ver Productos
             </button>
@@ -22,41 +20,36 @@ const Home = () => {
             <p>
               Cabernet
             </p>
-          </div>
-          <div>
             <button>
               Ver Productos
             </button>
-          </div></NavLink>
+          </div>
+        </NavLink>
         <NavLink className="box pinot" to={'/Categoria/4'}>
           <div>
             <p>
               Pinot
             </p>
-          </div>
-          <div>
             <button>
               Ver Productos
             </button>
-          </div></NavLink>
+          </div>
+        </NavLink>
         <NavLink className="box chardonay" to={'/Categoria/5'}>
           <div>
             <p>
               Chardonay
             </p>
-          </div>
-          <div>
             <button>
               Ver Productos
             </button>
-          </div></NavLink>
+          </div>
+        </NavLink>
         <NavLink className="box blend" to={'/Categoria/5'}>
           <div>
             <p>
               Blend
             </p>
-          </div>
-          <div>
             <button>
               Ver Productos
             </button>

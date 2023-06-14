@@ -1,32 +1,34 @@
 .home_container {
     display: grid;
-    height: 80vh;
-    gap: .7rem;
+    height: 90vh;
+    gap: .5rem;
     margin-top: .5rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "malbec cabernet pinot"
-        "malbec chardonay blend";
+                        "malbec chardonay blend";
+}
+.home_container p {
+    color: white;
 }
 
 .home_container .box {
     font-size: 3rem;
     border: solid 2px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    border-radius: 10px; 
     text-align: center;
 }
 
 .home_container .box:hover {
     transform: scale(1.02);
-    transition: 1.5ms;
+    transition: 1.1s;
 }
 
-.home_container button {
+.home_container .box button {
     font-size: 1.5rem;
     padding: .5rem 1rem;
     border-radius: 10px;
+    margin: auto;
+    width: 40%;
     cursor: pointer;
     background-color: transparent;
     color: white;
@@ -70,21 +72,25 @@
     background-size: cover;
 }
 
-@media (max-width:760px) {
+@media (max-width:860px) {
     .home_container {
         display: block;
-        width: 100vw;
-        height: 0vh;
+        width: 90wv;
         gap: 1rem;
         margin-top: .5rem;
     }
     .home_container .box {
         font-size: 3rem;
+        height: 35vh;
         border: solid 2px;
         border-radius: 10px;
+        margin-top: .5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
+    }
+    .home_container .box button {
+        width: 60%;
     }
 }
