@@ -48,8 +48,13 @@ a {
         bottom: 0;
         top: 0;
         background-color: #40128B;
-        visibility: hidden;
+        transform: translateX(100%);
+        transition: .5s ease;
     }
+    .header_container .nav.open {
+        transform: translateX(0);
+    }
+    
     .header_container nav .btnClose {
         font-size: 1.5rem;
         border: solid white;

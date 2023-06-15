@@ -9,7 +9,7 @@ const Cart = () => {
 
   if (cantidadTotal === 0) {
     return (
-      <div>
+      <div className="vacioContainer">
         <h2>No hay productos en el carrito</h2>
         <Link to={"/productos"}> <p>Ver Productos</p> </Link>
       </div>

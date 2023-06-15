@@ -8,9 +8,6 @@ import Cart from './Components/Cart/Cart'
 import Checkout from './Components/Checkout/Checkout'
 import Home from './Components/Home/Home'
 
-
-
-
 function App() {
   
   return (

@@ -1,3 +1,15 @@
+.vacioContainer {
+    text-align: center;
+}
+.vacioContainer p {
+    border: 1px solid;
+    background-color: #40128B;
+    border-radius: 20px;
+    color: white;
+    padding: .5rem;
+    width: 10vw;
+    margin: auto;
+}
 .cartItemContainer{
     text-align: center;
 }

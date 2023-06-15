@@ -3,19 +3,17 @@ import './NavBar.css'
 import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons'
+import { useState } from 'react'
 
 const NavBar = () => {
-  const nav = document.querySelector('.nav')
-  const open = ()=>{
-    nav.classList.add('hidden');
-  }
+  const [open, setOpen] = useState(false)
   return (
     <header className='header_container'>
       <Link to={'/'} >
         <h1>Winery Store</h1>
       </Link>
-      <nav className='nav'>
-        <FontAwesomeIcon className='btnClose' icon={faXmark} onClick={close} />
+      <nav className={`nav ${open && 'open'}`}>
+        <FontAwesomeIcon className='btnClose' icon={faXmark} onClick={()=> setOpen(!open)} />
         <ul>
           <li>
             <NavLink to={'/productos'}>Todos los Productos</NavLink>
@@ -35,7 +33,7 @@ const NavBar = () => {
         </ul>
       </nav>
       <CartWidget />
-      <button className='btnBar' onClick={open}>
+      <button className='btnBar' onClick={()=> setOpen(!open)}>
         <FontAwesomeIcon icon={faBars} />
       </button>
     </header>
