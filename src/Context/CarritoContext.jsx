@@ -50,7 +50,7 @@ export const CarritoProvider = ({ children }) => {
       showDenyButton: true,
       confirmButtonText: "Si",
       denyButtonText: "No",
-      position: "top-center",
+      position: "center",
       customClass: {
         container: 'container-class'
       }
@@ -62,9 +62,9 @@ export const CarritoProvider = ({ children }) => {
         MySwal.fire ({
           title: "Su carrito ha sido vaciado!",
           icon: "success",
-          position: "top-center",
+          position: "center",
           customClass: {
-            container: 'container-class'
+            container: 'container-class',
           }
         })
       }
