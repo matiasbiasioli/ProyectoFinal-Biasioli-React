@@ -33,3 +33,15 @@
     border: none;
     margin-top: 1rem;
 }
+
+@media (max-width:720px){
+    .cartItemContainer {
+        height: 50vh;
+    }
+    .vacioContainer p {
+        width: 35vw;
+    }
+    .container-class {
+        width: 100vw;
+    }
+}

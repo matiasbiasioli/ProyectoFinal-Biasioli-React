@@ -1,6 +1,7 @@
 import { createContext, useState } from "react";
 import Swal from "sweetalert2";
 import withReactContent from 'sweetalert2-react-content'
+import '../Components/Cart/Cart.css'
 
 export const CarritoContext = createContext({
   carrito: [],
@@ -49,6 +50,10 @@ export const CarritoProvider = ({ children }) => {
       showDenyButton: true,
       confirmButtonText: "Si",
       denyButtonText: "No",
+      position: "top-center",
+      customClass: {
+        container: 'container-class'
+      }
     }) .then ((result)=>{
       if (result.isConfirmed){
         setCarrito([]);
@@ -56,7 +61,11 @@ export const CarritoProvider = ({ children }) => {
         setTotal(0)
         MySwal.fire ({
           title: "Su carrito ha sido vaciado!",
-          icon: "success"
+          icon: "success",
+          position: "top-center",
+          customClass: {
+            container: 'container-class'
+          }
         })
       }
     })

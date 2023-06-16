@@ -17,7 +17,7 @@ const ItemDetail = ({ nombre, precio, img, id, stock }) => {
     agregarProducto(item, cantidad);
     //Funcion del tostify con parametros 
     const notify = ()=> toast("Agregaste producto al carrito!",{
-      position: "bottom-center",
+      position: "top-center",
       type: "success",
       autoClose: 1300,
       theme: 'dark'
@@ -27,7 +27,7 @@ const ItemDetail = ({ nombre, precio, img, id, stock }) => {
 
   return (
     <div className='productDetails'>
-      <div className='imgContainer'>
+      <div>
         <img src={img} alt={nombre} />
       </div>
       <div className='productDetailsContent'>
