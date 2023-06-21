@@ -20,7 +20,10 @@ const ItemDetail = ({ nombre, precio, img, id, stock }) => {
       position: "top-center",
       type: "success",
       autoClose: 1300,
-      theme: 'dark'
+      theme: 'dark',
+      style: {
+        marginTop: '30rem'
+      }
     })
     notify()
   }

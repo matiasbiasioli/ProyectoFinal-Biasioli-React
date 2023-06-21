@@ -3,14 +3,14 @@
     align-items: center;
     justify-content: space-around;
     border-bottom: 1px solid;
-    background-color: #FFE79B;
+    background-color: #090580;
 }
 .header_container h1 {
-    color: #40128B;
+    color: white;
     text-transform: uppercase;
 }
 .header_container h1:hover{
-    color: #6f2cdb;
+    color: #ece1e1;
 }
 .header_container .nav ul {
     display: flex;
@@ -20,11 +20,11 @@
     font-size: 1.5rem;
 }
 a {
-    color: #40128B;
+    color: #ffffff;
     text-decoration: none;
 }
 a:hover {
-    color: #6f2cdb;
+    color: #ece1e1;
 }
 .btnBar {
     display: none;
@@ -37,9 +37,9 @@ a:hover {
     .btnBar {
         display: block;
         font-size: 2rem;
-        color:#40128B;
+        color:white;
         border: none;
-        background-color: #FFE79B;
+        background-color: #090580;
         cursor: pointer;
     }
     .header_container .nav {
@@ -50,14 +50,12 @@ a:hover {
         right: 0;
         bottom: 0;
         top: 0;
-        background-color: #40128B;
-        visibility: hidden;
+        background-color: #090580;
         transform: translateX(100%);
         transition: .5s ease;
         
     }
     .header_container .nav.open {
-        visibility: visible;
         transform: translateX(0);
     }
     

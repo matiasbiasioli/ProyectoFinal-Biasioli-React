@@ -1,5 +1,7 @@
 .home_container {
     display: grid;
+    margin: auto;
+    width: 98vw;
     height: 90vh;
     gap: .5rem;
     margin-top: .5rem;
@@ -19,7 +21,7 @@
 }
 
 .home_container .box:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
     transition: 1.1s;
 }
 
@@ -78,7 +80,7 @@
 @media (max-width:860px) {
     .home_container {
         display: block;
-        width: 90wv;
+        width: 95vw;
         gap: 1rem;
         margin-top: .5rem;
     }
